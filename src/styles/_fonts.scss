@@ -1,0 +1,24 @@
+/***** UBUNTU *****/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$heading1: normal bold 2rem/2.4rem 'Ubuntu', sans-serif;
+$heading2: normal bold 1.5rem/1.8rem 'Ubuntu', sans-serif;
+$heading3: normal 500 1rem/1.2rem 'Ubuntu', sans-serif;
+$body1: normal normal 0.8rem/1.6rem 'Ubuntu', sans-serif;
+$nav: normal bold 16px/19px 'Ubuntu', sans-serif;
+
+.heading1{
+    font: $heading1;
+}
+.heading2{
+    font: $heading2;
+}
+.heading3{
+    font: $heading3;
+}
+.body1{
+    font: $body1;
+}
+.nav-font{
+    font: $nav;
+}

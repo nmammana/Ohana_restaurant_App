@@ -1,0 +1,153 @@
+$warm-black: #201E1C;
+$warm-black2: #282623;
+$gray: #433F3F;
+$middle-gray: #8E8989; 
+$light-gray: #BAB6B6;
+$light-blue: #5EE8D4;
+$light-blue2: #DFF3ED;
+$off-white : #FAF8F7;
+$white: #FFFFFF;
+
+.item-card{
+    width: 100%;
+}
+    .item{
+        width: 100%;
+        margin: .5em 0;
+        height: 100px;
+        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+        overflow: hidden;
+        border-radius: 6px; 
+        display: grid;
+        grid-template-columns: 100px 1fr 20px;
+        align-items: center;
+    
+        .item__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        .item__info{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: .8em 1em .3em;
+            
+            .info__name{
+                color: $gray;
+                font: normal 500 17px/18px 'Ubuntu', sans-serif;;
+            }
+
+            .no-stock{
+                font: normal 500 16px/18px 'Ubuntu', sans-serif;
+                color: $middle-gray;
+            }
+
+            .price{
+                color: $warm-black;
+                font: normal bold 19px/19px 'Ubuntu', sans-serif;
+                display: flex;
+                align-items: center;
+                .symbol{
+                    font-weight: normal;
+                    font-size: 13px;
+                    color: $warm-black;
+                }
+            }
+           
+        }
+        .item__icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: $light-gray;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .item:hover{
+        cursor: pointer;
+    }
+    
+    .modal-title{
+        color: $gray;
+        background: $light-blue2;
+    }
+    
+    .item-details{
+        .img-container{
+            display: flex;
+            justify-content: center;
+        }
+        .item-text{
+            .description{
+                padding: 1em 0;
+                color: $warm-black;
+                font: normal normal 16px/18px 'Ubuntu', sans-serif;
+            }
+            .prices-container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .price-box{
+                    margin-bottom: 0.5em;
+                    border-radius: 6px;
+                    background: $light-blue2;
+                    height: 40px;
+                    max-width: 150px;
+                    width: 40%;
+                    padding: 0 1em;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+                    
+                    .no-stock{
+                        font: normal bold 15px/17px 'Ubuntu', sans-serif;
+                    }
+
+                    .price{
+                        color: $warm-black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font: normal bold 24px/28px 'Ubuntu', sans-serif;
+                        .symbol{
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: $warm-black;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .button-close.chakra-button{
+        color: $warm-black2;
+        background: $off-white;
+        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    }
+
+
+@media (min-width: 600px){
+    .item-card{
+        width: 48%;
+        margin: 0 1% 16px;
+    }
+}
+
+@media (min-width: 900px){
+    .item-card{
+        width: 31%;
+        margin: 0 1% 20px;
+    }
+}

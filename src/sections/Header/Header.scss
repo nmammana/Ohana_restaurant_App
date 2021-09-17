@@ -1,0 +1,20 @@
+$warm-black: #201E1C;
+$warm-black2: #282623;
+$gray: #433F3F;
+$light-blue2: #DFF3ED;
+header{  
+    background: $light-blue2;
+
+    .header-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        .logo-container{
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
